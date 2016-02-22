@@ -1984,6 +1984,7 @@
 				BF2F35B4183FF6F9002ACE90 /* Frameworks */,
 				BF2F35C5183FF6F9002ACE90 /* Resources */,
 				BF2F35CF183FF6F9002ACE90 /* Copy Pods Resources */,
+				1C8D9285CB68403847E645E3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2006,6 +2007,7 @@
 				657CB59918BF14DD00217F96 /* ShellScript */,
 				BF7C0E74189DA4CB00794093 /* ShellScript */,
 				BFB39ADD1958D796003330AE /* Embed App Extensions */,
+				7EA26F18CE9823FDF583784C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2035,7 +2037,7 @@
 						};
 					};
 					CC2D56FB1798F2EC00C616EB = {
-						DevelopmentTeam = X9JFNKXF5Q;
+						DevelopmentTeam = AT7655H5F7;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2129,6 +2131,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C8D9285CB68403847E645E3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		657CB59918BF14DD00217F96 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2141,6 +2158,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "APPBUNDLEPATH=\"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/\"\nCRASHLYTICSKEYPATH=\"./Crashlytics.apikey\"\nif [ -f \"${CRASHLYTICSKEYPATH}\" ]; then\n    echo \"Copying Crashlytics api key file into app bundle.\"\n    cp \"${CRASHLYTICSKEYPATH}\" \"${APPBUNDLEPATH}\"\nfi";
+		};
+		7EA26F18CE9823FDF583784C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		939E031126014661A3BB86B3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2969,7 +3001,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.plotholesbananas.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chatgame.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -3164,7 +3196,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.plotholesbananas.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chatgame.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -3479,7 +3511,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.plotholesbananas.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chatgame.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -3518,7 +3550,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.plotholesbananas.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chatgame.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -3673,7 +3705,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.plotholesbananas.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chatgame.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
